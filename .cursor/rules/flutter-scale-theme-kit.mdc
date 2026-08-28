@@ -1,0 +1,28 @@
+---
+description: How agents load Flutter Scale Theme Kit context and where truth lives
+alwaysApply: true
+---
+
+# Flutter Scale Theme Kit — session memory
+
+This repo is the **flutter_scale_theme_kit** pub package (look / ThemeData). It is not an app.
+
+Sibling folder (same level): `../flutter_scale_kit` = **size**. Do not import it from `lib/`.
+
+## Where to look (in order)
+
+1. `spec/` — product, invariants, decisions. Start at `spec/README.md`.
+2. `lib/` — implementation truth.
+3. `CHANGELOG.md` — recent behavior.
+4. `README.md` — user docs only. Do not load the whole file into context.
+5. Consumer usage skill: `skills/flutter-scale-theme-kit/` (update it when the public API changes).
+
+## Hard rules
+
+- Runtime `lib/` depends on Flutter only. No `flutter_scale_kit`, `provider`, `material_color_utilities`, `dart:io`.
+- No scaling APIs (`.w`, `.sp`, `SK*`) in this package.
+- Do not export a type named `ScaleThemeData`.
+- Dark colors are authored. No `ColorScheme.fromSeed` as the default.
+- No `STCard` / `STButton`.
+- If a **consumer app** also has Scale Kit, merge with `appST.light.copyWith(textTheme: appST.light.createResponsiveTextTheme(appST.light.textTheme))` under `ScaleKitBuilder`. Never `ResponsiveThemeData.create` alone.
+- If you change behavior, update `spec/` in the same change. Public API changes must also update `skills/flutter-scale-theme-kit/`.
