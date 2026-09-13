@@ -13,17 +13,19 @@ The two repos sit at the **same folder level** (`flutter_scale_kit` next to `flu
 
 This package does **not** depend on `flutter_scale_kit`. Install one or both.
 
-- Dart `^3.7.2`, Flutter `>=3.29.0`
+- Dart `^3.7.2`, Flutter `>=3.35.0`
 - Runtime dependency: Flutter SDK only
 - No `STButton` / `STCard` — use Flutter widgets (or SK widgets for size)
 - Dark colors are **authored**. Omit `dark:` and light is reused. Nothing invents a palette (`ColorScheme.fromSeed` is not the default)
 
-## Install
+## Agent skill (from GitHub)
 
-```yaml
-dependencies:
-  flutter_scale_theme_kit: ^1.0.1
+```bash
+npx skills add fodilfliti/flutter_scale_theme_kit --skill flutter-scale-theme-kit
+# or full family (includes this skill): npx skills add fodilfliti/lemsa-skills
 ```
+
+See [skills/README.md](skills/README.md).
 
 With size (recommended for production apps):
 

@@ -26,3 +26,4 @@ Sibling folder (same level): `../flutter_scale_kit` = **size**. Do not import it
 - No `STCard` / `STButton`.
 - If a **consumer app** also has Scale Kit, merge with `appST.light.copyWith(textTheme: appST.light.createResponsiveTextTheme(appST.light.textTheme))` under `ScaleKitBuilder`. Never `ResponsiveThemeData.create` alone.
 - If you change behavior, update `spec/` in the same change. Public API changes must also update `skills/flutter-scale-theme-kit/`.
+- **FVM:** pinned **3.35.5** (`.fvmrc`). Use `fvm flutter` / `fvm dart`; do not rely on global `flutter`.

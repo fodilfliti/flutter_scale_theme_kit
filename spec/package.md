@@ -1,8 +1,8 @@
 # Flutter Scale Theme Kit
 
-Pub package `flutter_scale_theme_kit` (**1.0.1**). Lightweight **look** layer for Flutter: semantic colors, light/dark tokens, component visual defaults, and Material `ThemeData` generation.
+Pub package `flutter_scale_theme_kit` (**1.0.2**). Lightweight **look** layer for Flutter: semantic colors, light/dark tokens, component visual defaults, and Material `ThemeData` generation.
 
-Constraints: Dart `^3.7.2`, Flutter `>=3.29.0`. Match `flutter_scale_kit` **2.0.0** so apps can install both. Do not raise the Dart floor to 3.13.
+Constraints: Dart `^3.7.2`, Flutter `>=3.35.0` (Flutter [component theme normalization](https://docs.flutter.dev/release/breaking-changes/component-theme-normalization-updates) — `BottomAppBarThemeData` on `ThemeData.bottomAppBarTheme`). Sibling `flutter_scale_kit` **2.0.0** still supports `>=3.29.0`. **Dev SDK:** FVM pin **3.35.5** (`.fvmrc`); run `fvm flutter` / `fvm dart`. Do not raise the Dart floor to 3.13.
 
 Sibling folder: `../flutter_scale_kit` (size). Do not import it from `lib/`.
 

@@ -37,7 +37,7 @@ appST.light.copyWith(
 
 ## Flutter SDK
 
-Keep package constraints at Dart `^3.7.2` and Flutter `>=3.29.0` so apps can use this package with `flutter_scale_kit` **2.0.0**. If this repo is later pinned with FVM, use `fvm flutter` / `fvm dart`. Never run `flutter upgrade` on a global SDK.
+Keep package constraints at Dart `^3.7.2` and Flutter `>=3.35.0` (Flutter 3.35+ `BottomAppBarThemeData` on `ThemeData.bottomAppBarTheme`). Sibling `flutter_scale_kit` **2.0.0** still supports `>=3.29.0`. **This repo is pinned with FVM** (`.fvmrc` → **3.35.5**). Use `fvm flutter` / `fvm dart`; never `flutter upgrade` on a global SDK.
 
 ## Out of scope unless asked
 

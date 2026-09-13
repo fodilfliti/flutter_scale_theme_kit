@@ -6,15 +6,27 @@ Package authors: keep `spec/` for internals. When you change a public API, updat
 
 ## Install (any compatible agent)
 
+**From this package’s GitHub** (canonical):
+
 ```bash
 npx skills add fodilfliti/flutter_scale_theme_kit
 npx skills add fodilfliti/flutter_scale_theme_kit --skill flutter-scale-theme-kit
+```
+
+Repo: [https://github.com/fodilfliti/flutter_scale_theme_kit](https://github.com/fodilfliti/flutter_scale_theme_kit)
+
+**Or with the full Lemsa family** (this skill is also bundled there):
+
+```bash
+npx skills add fodilfliti/lemsa-skills
+# or: npx skills add fodilfliti/lemsa-skills --skill flutter-scale-theme-kit
 ```
 
 If the app also uses **size** (`flutter_scale_kit`, sibling package), install that skill too:
 
 ```bash
 npx skills add fodilfliti/flutter_scale_kit
+# or: npx skills add fodilfliti/lemsa-skills --skill flutter-scale-kit
 ```
 
 Then ask:

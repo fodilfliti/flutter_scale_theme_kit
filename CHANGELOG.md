@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.2] - 2026-08-31
+
+### Fixed
+
+- Use `BottomAppBarThemeData` for `ThemeData.bottomAppBarTheme` (Flutter 3.35+ component theme normalization). Restores pub.dev platform analysis.
+
+### Changed
+
+- Minimum Flutter SDK: `>=3.35.0` (was `>=3.29.0`). `flutter_scale_kit` remains compatible at `>=3.29.0`; apps on Flutter 3.29–3.34 should upgrade Flutter or stay on theme kit 1.0.1.
+
 ## [1.0.1] - 2026-08-28
 
 First publishable look companion to [`flutter_scale_kit`](https://pub.dev/packages/flutter_scale_kit) **2.0.0**. Independent — no runtime dependency on Scale Kit.

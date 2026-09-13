@@ -245,7 +245,7 @@ class STThemeDataFactory {
         backgroundColor: drawer.fill,
         indicatorColor: ext.primary.withValues(alpha: 0.24),
       ),
-      bottomAppBarTheme: BottomAppBarTheme(
+      bottomAppBarTheme: BottomAppBarThemeData(
         color: bottomAppBar.fill,
         elevation: bottomAppBar.elevation,
       ),

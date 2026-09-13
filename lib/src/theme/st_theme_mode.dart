@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 class STThemeModeController extends ChangeNotifier {
   ThemeMode _mode;
 
-  STThemeModeController({ThemeMode mode = ThemeMode.system}) : _mode = mode;
+  STThemeModeController({this._mode = ThemeMode.system});
 
   ThemeMode get mode => _mode;
 
