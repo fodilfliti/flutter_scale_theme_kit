@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.3] - 2026-09-13
+
+### Fixed
+
+- `STThemeModeController` constructor: use named `mode` parameter (Dart forbids named `this._mode`). Restores `STThemeModeController(mode: …)` / `STThemeModeScope`.
+
 ## [1.0.2] - 2026-08-31
 
 ### Fixed

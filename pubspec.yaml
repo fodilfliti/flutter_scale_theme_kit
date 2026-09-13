@@ -2,7 +2,7 @@ name: flutter_scale_theme_kit
 description: >
   Look companion for Flutter: semantic colors, light/dark tokens, and Material
   ThemeData. Pair with flutter_scale_kit for size. Independent — no scale_kit dependency.
-version: 1.0.2
+version: 1.0.3
 homepage: https://github.com/fodilfliti/flutter_scale_theme_kit
 repository: https://github.com/fodilfliti/flutter_scale_theme_kit
 issue_tracker: https://github.com/fodilfliti/flutter_scale_theme_kit/issues

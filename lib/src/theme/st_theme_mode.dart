@@ -5,7 +5,10 @@ import 'package:flutter/material.dart';
 class STThemeModeController extends ChangeNotifier {
   ThemeMode _mode;
 
-  STThemeModeController({this._mode = ThemeMode.system});
+  /// Creates a controller. Named param is [mode]; private [_mode] is assigned
+  /// in the initializer (Dart forbids named parameters starting with `_`).
+  // ignore: prefer_initializing_formals -- named `this._mode` is illegal in Dart
+  STThemeModeController({ThemeMode mode = ThemeMode.system}) : _mode = mode;
 
   ThemeMode get mode => _mode;
 
